@@ -1,0 +1,12 @@
+comandos python:
+
+    print() - imprime, no terminal interpretador python, o texto inserido como parâmetro.
+
+Nota:
+
+    python <caminho do arquivo> <nome do arquivo .py> ->
+        para acessar o interpretador python em qualquer terminal, basta escrever "python". O aparecimento de >>> indica que o interpretador foi aberto com sucesso
+        é necessário ter instalado o python anteriormente
+        quando fora do interpretador, 
+
+    para sair do interpretador pytho utilize o comando "exit()" + Enter
