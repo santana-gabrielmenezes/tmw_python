@@ -1,6 +1,17 @@
 comandos python:
 
-    print() - imprime, no terminal interpretador python, o texto inserido como parâmetro.
+    print() -> imprime, no terminal interpretador python, o texto inserido como parâmetro
+
+    type() -> retorna o tipo de um objeto
+
+    <dividendo> % <divisor> -> retorna o resto da divisão
+
+    <dividendo> // <divisor> -> retorna a parte inteira do resultado da divisão
+
+    <base> ** <expoente> -> retorna o resultado da exponenciação
+
+    # %% -> indica que as linhas a seguir serão executadas em uma célula no Interactive py
+        para abrir o "Interactive py" basta executar um .py iniciado por "# %%"
 
 Nota:
 
@@ -10,3 +21,5 @@ Nota:
         quando fora do interpretador, 
 
     para sair do interpretador pytho utilize o comando "exit()" + Enter
+
+    para comentar, basta usar o # no início da linha
