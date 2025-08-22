@@ -4,14 +4,24 @@ comandos python:
 
     type() -> retorna o tipo de um objeto
 
+    input() -> recebe infromação do usuário SEMPRE NO FORMATO DE STRING
+        input(<texto>) -> exibe um texto antes de aguardara a infromação do usuário
+    
+    int() -> converte em tipo inteiro
+
+    # %% -> inicia uma célula de execulção, as linhas a seguir serão executadas no Interactive py
+        para abrir o "Interactive py" basta executar um .py iniciado por "# %%"
+
+    /n -> insere uma quebra de texto (parágrafo) na string
+
     <dividendo> % <divisor> -> retorna o resto da divisão
 
     <dividendo> // <divisor> -> retorna a parte inteira do resultado da divisão
 
     <base> ** <expoente> -> retorna o resultado da exponenciação
 
-    # %% -> indica que as linhas a seguir serão executadas em uma célula no Interactive py
-        para abrir o "Interactive py" basta executar um .py iniciado por "# %%"
+    <nome da variável> = <valor da variável> -> inicializa e atribui valor a uma variável
+        em células de, as variável apresentaram o último valor atribuido, não necessariamente o valor atribuido em linhas superiores
 
 Nota:
 
