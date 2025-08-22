@@ -1,3 +1,13 @@
+Atalhos VS Code:
+
+    Shift + Alt + i -> posiciona um cursor de ferente no final de cada linha selecionada
+
+    Ctrl + d -> seleciona a próxima aparição do termo selecionado
+
+    Ctrl + h -> abre uma caixa de diálogo para localizar e substituir uma palavra
+
+    Home / End -> posiciona o(s) cursor(s) no início / fim da(s) linha(s)
+
 comandos python:
 
     print() -> imprime, no terminal interpretador python, o texto inserido como parâmetro
