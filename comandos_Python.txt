@@ -11,15 +11,22 @@ Atalhos VS Code:
 comandos python:
 
     print(...) -> imprime, no terminal interpretador python, o texto inserido como parâmetro
+        sep = ... -> parâmetro que define o separador entre os elementos da concatenação interna ao print()
 
     type(...) -> retorna o tipo de um objeto
 
     input(...) -> recebe infromação do usuário SEMPRE NO FORMATO DE STRING
         input(<texto>) -> exibe um texto antes de aguardara a infromação do usuário
-    
+
+    range(<valor start>,<valor stop>) -> cria uma estrutura de dados com valores entre o valor start e o valor stop
+        o comando range() inclue o valor strar, mas não inclue na estrutura o valor stop
+        se o valor start for omitido, por padrão será admitido como 0
+
     int(...) -> converte em tipo inteiro
 
     bool(...) -> retorna o booleano equivalente
+
+    <objeto>.lower() -> retorna o texto em string com todas as letras minúsculas
 
     if <condições> : <comandos> -> executa o(s) comando(s) apenas se a condição for verdadeira
 
@@ -27,12 +34,25 @@ comandos python:
 
     elif <condições> : <comandos> -> funciona como um condional extra específico para quando a condição do if anterior não é verdadeira. É usado para deixar o código menos verboso substituindo o else seguido do if apenas pelo elif. Portanto ele é obrigatoriamente usado entre o if e o else
 
+    while <condições> : <comandos> -> executa os comandos repetidamente enquanto a condição for True
+        break -> sai do loop
+        continue -> reinicia o laço ignorando
+    
+    for <variável> in <objeto> : <comandos> -> executa os comandos iterando, um a um, sobre todos cada um dos elementos de um objeto
+
     <condição> and <condição> -> operador lógico and
 
     <expressão> == <expressão> -> operador lógico de igualdade expecificamente para os componentes de um objeto. retorna true se os componentes de dois objetos forem iguais, mas se forem objetos diferentes retorna false
 
-    # %% -> inicia uma célula de execulção, as linhas a seguir serão executadas no Interactive py
+    <expressão> != <expressão> -> operador lógico de desigualdade
+
+    <expressão 1> in <expressão 2> -> retorna True se o(s) elemento(s) da expreção 1 está(s) contido(s) na expressão 2
+
+    += e -= -> incrementa positivamente e negativamente (respectaivamente) o valor de uma variável
+
+    # %% -> inicia uma célula de execução, as linhas a seguir serão executadas no Interactive py
         para abrir o "Interactive py" basta executar um .py iniciado por "# %%"
+        para executar apenas a célula de execução use o atalho Shift + Enter
 
     /n -> insere uma quebra de texto (parágrafo) na string
 
@@ -45,12 +65,23 @@ comandos python:
     <nome da variável> = <valor da variável> -> inicializa e atribui valor a uma variável
         em células de, as variável apresentaram o último valor atribuido, não necessariamente o valor atribuido em linhas superiores
 
+    <nome da lista> = [elementos] -> cria uma estrutura de lista com vários elementos
+        diferente de um vetor (array), a lista pode ser constituida de elementos de tipos diferentes
+        <variável>[número do elemento] -> acessa elementos de uma lista do primeiro ao ultimo sendo o primeiro elemento o de número 0.
+            Para acessar elementos do ultimo ao primeiro usa-se valores negativos sendo o ultimo o de número -1
+
+    len(<nome da lista>) -> retorna o número de elementos de uma lista
+
+    <nome da lista>[<valor start>,<valor stop>:<valor step>] -> extra da lista os elementos, da posição valor start até o anterior à posição valor stop.
+        o valor step indica quantos elementos serão "saltados" a cada retorno. este vlor é opicional e quando suprimido é admitido o valor padrão 1
+        quando usados valores negativos, o retorno é feito do ultimo ao primeiro elemento da lista
+        se o valor start for omitido, por padrão será admitido como 0
+
 Nota:
 
     python <caminho do arquivo> <nome do arquivo .py> ->
         para acessar o interpretador python em qualquer terminal, basta escrever "python". O aparecimento de >>> indica que o interpretador foi aberto com sucesso
         é necessário ter instalado o python anteriormente
-        quando fora do interpretador, 
 
     para sair do interpretador pytho utilize o comando "exit()" + Enter
 
@@ -73,3 +104,5 @@ Nota:
                             true    or     false   =   1 + 0   =   1 (true)
                             false   or     true        0 + 1       1 (true)
                             false   or     false       0 + 0       0 (false)
+
+    métodos são ações que o python pode executar em cima de objetos
