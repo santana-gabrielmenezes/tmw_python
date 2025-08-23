@@ -10,14 +10,26 @@ Atalhos VS Code:
 
 comandos python:
 
-    print() -> imprime, no terminal interpretador python, o texto inserido como parâmetro
+    print(...) -> imprime, no terminal interpretador python, o texto inserido como parâmetro
 
-    type() -> retorna o tipo de um objeto
+    type(...) -> retorna o tipo de um objeto
 
-    input() -> recebe infromação do usuário SEMPRE NO FORMATO DE STRING
+    input(...) -> recebe infromação do usuário SEMPRE NO FORMATO DE STRING
         input(<texto>) -> exibe um texto antes de aguardara a infromação do usuário
     
-    int() -> converte em tipo inteiro
+    int(...) -> converte em tipo inteiro
+
+    bool(...) -> retorna o booleano equivalente
+
+    if <condições> : <comandos> -> executa o(s) comando(s) apenas se a condição for verdadeira
+
+    else : <comandos> -> deve ser inserido após do if e funciona executando o comando quando a condição do(s) if não são verdadeiras
+
+    elif <condições> : <comandos> -> funciona como um condional extra específico para quando a condição do if anterior não é verdadeira. É usado para deixar o código menos verboso substituindo o else seguido do if apenas pelo elif. Portanto ele é obrigatoriamente usado entre o if e o else
+
+    <condição> and <condição> -> operador lógico and
+
+    <expressão> == <expressão> -> operador lógico de igualdade expecificamente para os componentes de um objeto. retorna true se os componentes de dois objetos forem iguais, mas se forem objetos diferentes retorna false
 
     # %% -> inicia uma célula de execulção, as linhas a seguir serão executadas no Interactive py
         para abrir o "Interactive py" basta executar um .py iniciado por "# %%"
@@ -43,3 +55,21 @@ Nota:
     para sair do interpretador pytho utilize o comando "exit()" + Enter
 
     para comentar, basta usar o # no início da linha
+
+    entre o if e o else não podem haver comandos (exceto pelo elif). o if/else funciona como um bloco de comando onde a identação (especificamente identação de 4 espaços) identifica o bloco.
+
+    para o condicional a estrutura é if (obrigatório apenas um e no início), elif (opcional quantos desejar entre o if e o else) e else (opcional apenas um e no final)
+
+    o true e o false podem ser executados como 1 e 0 inclusive em operações matemáticas
+
+    o operador and pode ser interpretado como multiplicação enquanto o or pode ser interpretado como soma
+
+    tabela verdade and :    true    and     true        1 * 1       1 (true)
+                            true    and     false   =   1 * 0   =   0 (false)
+                            false   and     true        0 * 1       0 (false)
+                            false   and     false       0 * 0       0 (false)
+
+    tabela verdade or :     true    or     true        1 + 1       2 (true)
+                            true    or     false   =   1 + 0   =   1 (true)
+                            false   or     true        0 + 1       1 (true)
+                            false   or     false       0 + 0       0 (false)

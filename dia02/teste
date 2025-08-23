@@ -1,0 +1,3 @@
+numero = int(True + True)
+
+print(numero)
