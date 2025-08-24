@@ -39,6 +39,7 @@ comandos python:
         continue -> reinicia o laço ignorando
     
     for <variável> in <objeto> : <comandos> -> executa os comandos iterando, um a um, sobre todos cada um dos elementos de um objeto
+        o i assume os valores dos elementos na oredem do primeiro ao ultimo até o fim do elemento durante as iterações
 
     <condição> and <condição> -> operador lógico and
 
@@ -72,10 +73,31 @@ comandos python:
 
     len(<nome da lista>) -> retorna o número de elementos de uma lista
 
-    <nome da lista>[<valor start>,<valor stop>:<valor step>] -> extra da lista os elementos, da posição valor start até o anterior à posição valor stop.
+    sum(<nome da lista>) - retorna a soma dos valores dentro da lista
+
+    <nome da lista>[<valor start>:<valor stop>:<valor step>] -> extra da lista os elementos, da posição valor start até o anterior à posição valor stop.
         o valor step indica quantos elementos serão "saltados" a cada retorno. este vlor é opicional e quando suprimido é admitido o valor padrão 1
         quando usados valores negativos, o retorno é feito do ultimo ao primeiro elemento da lista
         se o valor start for omitido, por padrão será admitido como 0
+
+    <nome da lista>.append(...) -> insere um único valor no final da lista
+
+    <nome da lista>.extend(...) -> insere, um a um, os valores de uma lista na lista a ser alterada
+
+    <nome da lista> = <nome da lista> + <outra lista> -> concatena o valor da segunda lista na primeira. funciona como o .extend()
+
+    <nome do dicionário>{'<noma da chave 1>' : <valor 1> , '<noma da chave 2>' : <valor 2> , '<noma da chave 3>' : <valor 3> , etc } -> cria uma estrutura chave/valor
+        <nome do dicionário>['<nome da chave'] -> acessa o valor atribuido àquela chave
+
+    <nome do dicionário>.keys() -> retorna uma lista com os nomes das chaves do dicionario
+
+    <nome do dicionário>.values() -> retorna uma lista com os valores do dicionario
+    
+    <nome do dicionário>.items() -> retorna uma lista com os pares chave/valore do dicionario
+
+    <nome da tupla> = (elementos) -> cria uma estrutura de lista IMUTÁVEL
+
+    try : ... except ... -> estrutura que indica ao python tentar execultar um(s) comando(s), caso resulte em erro, execulta outro(s) comando(s)
 
 Nota:
 
@@ -83,7 +105,7 @@ Nota:
         para acessar o interpretador python em qualquer terminal, basta escrever "python". O aparecimento de >>> indica que o interpretador foi aberto com sucesso
         é necessário ter instalado o python anteriormente
 
-    para sair do interpretador pytho utilize o comando "exit()" + Enter
+    para sair do interpretador python utilize o comando "exit()" + Enter
 
     para comentar, basta usar o # no início da linha
 
@@ -106,3 +128,10 @@ Nota:
                             false   or     false       0 + 0       0 (false)
 
     métodos são ações que o python pode executar em cima de objetos
+
+    os objetos podem ser classificados como mutaveis ou imutaveis
+        mutáveis: métodos aplicados a estes mudam o objeto e retornam este alterado
+        imutáveis: métodos aplicados a estes não mudam o objeto, mas retornam um novo objeto com as alterações aplicadas mantendo o objeto original intacto
+
+    strings podem ser interpretadas como listas. inclusive as ações e metodos usados para listas podem ser usados em strings como se cada letra fosse um elemento
+
