@@ -97,7 +97,15 @@ comandos python:
 
     <nome da tupla> = (elementos) -> cria uma estrutura de lista IMUTÁVEL
 
-    try : ... except ... -> estrutura que indica ao python tentar execultar um(s) comando(s), caso resulte em erro, execulta outro(s) comando(s)
+    try : ... except : ... -> estrutura que indica ao python tentar execultar um(s) comando(s), caso resulte em erro, execulta outro(s) comando(s)
+
+    def <nome da função>(<argumentos 1> , <argumentos 2> , etc) : <comandos> return <resultado da função> -> define uma função retornando o resultado da função
+        uma função pode ter um, mais de um ou nenhum argumentos
+        para criar argumentos não obrigatórios, basta inserir um valor padrão a este na definição da função acrecentando ao argumento =<valor padrão>
+        o return funciona como o break da função finalizando-a
+    
+    def <nome da função>(*<argumentos>) -> o * é usado para recebe um número indefinido de argumentos para a função
+        podem existir mais de um argumento, desde que exista apenas um argumento com *
 
 Nota:
 
@@ -135,3 +143,4 @@ Nota:
 
     strings podem ser interpretadas como listas. inclusive as ações e metodos usados para listas podem ser usados em strings como se cada letra fosse um elemento
 
+    na declaração de uma função, os valores obrigatórios devem ser declarados antes dos opcionais
