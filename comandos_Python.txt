@@ -121,6 +121,24 @@ comandos python:
     from <nome da biblioteca> import <nome do elemento impotado> -> importa apenas um elemento específico da biblioteca
         quando importado desta forma, o elemento passa a ser parte do código e pode ser invocado sem o <nome da biblioteca>.
 
+    <nome da variável> = open("<caminho do arquivo>", "tipo de abertura") -> abre arquivos
+        caso o arquivo esteja no mesmo diretório não é necessario escrever o caminho completo, é possível suprimir a parte do caminho até o diretório atual
+        o tipo de abertura "w" abre arquivos em modo de escrita, sobrescrevendo completamente o conteudo anterior do arquivo
+        o tipo de abertura "a" abre arquivos em modo de escrita, adicionando o conteudo ao arquivo
+        o tipo de abertura "r" abre arquivos em modo de leitura
+
+    <variável arquivo>.write("texto") -> escreve dento do arquivo
+
+    <nome da variável> = <variável arquivo>.read() -> lê todo o conteudo do arquivo e retorna uma string com este conteudo
+
+    <nome da variável> = <variável arquivo>.readline("texto") -> lê todo o conteudo do arquivo e retorna uma lista com o conteudo de cada linha em uma posição da lista
+
+    <variável arquivo>.close() -> fecha o arquivo
+
+    with open("<caminho do arquivo>", "tipo de abertura") as <alias> : <comandos> -> mantem o arquivo aperto enquando os comandos estão sendo executados e fecha automaticamente ao finalizar os comandos
+        é bastante útil para evitar o não fechamento do arquivo por esquecimento (por exemplo)
+        também vai funcionar com qualquer outra estrutura que exiga o fechamento ao final como execuções de bancos de dados (por exemplo)
+
 Nota:
 
     python <caminho do arquivo> <nome do arquivo .py> ->
