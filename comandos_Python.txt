@@ -103,9 +103,23 @@ comandos python:
         uma função pode ter um, mais de um ou nenhum argumentos
         para criar argumentos não obrigatórios, basta inserir um valor padrão a este na definição da função acrecentando ao argumento =<valor padrão>
         o return funciona como o break da função finalizando-a
+        a estrutura def <nome da função>(<argumentos>) é chamada de assinatura da função
     
     def <nome da função>(*<argumentos>) -> o * é usado para recebe um número indefinido de argumentos para a função
         podem existir mais de um argumento, desde que exista apenas um argumento com *
+
+    <assinatura da função>'''<documentação da função>''' -> esta estrutura cria um texto que será exibido como documentação no helper da função onde esta for usada
+
+    import <nome da biblioteca> -> importa uma biblioteca
+        para que uma biblioteca seja usada deve ser obrigatoriamente importada antes
+        uma biblioteca pode conter módulos, classes e funções
+    
+    import <nome da biblioteca> as <alias> -> importa uma biblioteca criando um apelido para ser usado no lugar do nome da biblioteca sempre que for invocar um elemento desta
+
+    <nome da biblioteca>.<elemento da biblioteca>() -> invoca um elemento da biblioteca para ser usado no código
+
+    from <nome da biblioteca> import <nome do elemento impotado> -> importa apenas um elemento específico da biblioteca
+        quando importado desta forma, o elemento passa a ser parte do código e pode ser invocado sem o <nome da biblioteca>.
 
 Nota:
 
@@ -144,3 +158,7 @@ Nota:
     strings podem ser interpretadas como listas. inclusive as ações e metodos usados para listas podem ser usados em strings como se cada letra fosse um elemento
 
     na declaração de uma função, os valores obrigatórios devem ser declarados antes dos opcionais
+
+    não é boa prática com bibliotecas impota-las por completo. Algumas bibliotecas são muito grandes e podem deixar seu código pesado
+
+    é boa prática com bibliotecas sempre usar o <nome da biblioteca>. antes de um elemento para invoca-lo pois identifica a origem daquele elemento não nativo

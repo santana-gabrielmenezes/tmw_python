@@ -1,10 +1,16 @@
 def valida_entrada():
+    '''checka se o numero está entre 1 e 15 e se é algarismo ou não'''
     while True :
         try :
             numero = int(input('Entre com um numero entre 1 e 15: '))
-            return numero
         except ValueError:
             print('Insira o númeor em algarismo!')
+            continue
+
+        if 1 <= numero <= 15 :
+            return numero
+        else :
+            print('Número inválido.')
 
 numero_sorte = 7
 
